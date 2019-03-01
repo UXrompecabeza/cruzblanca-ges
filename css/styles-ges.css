@@ -1,0 +1,881 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-Italic.woff2") format("woff2"), url("../assets/fonts/Montserrat-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-LightItalic.woff2") format("woff2"), url("../assets/fonts/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+.flujo-ges h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  padding: 1em 0 1.5em;
+}
+
+.flujo-ges .carousel-users {
+  margin: 0 !important;
+}
+
+.flujo-ges .carousel-users h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.flujo-ges .carousel {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.flujo-ges .steps-wizard-bonos {
+  margin: 0 auto 2em;
+}
+
+.flujo-ges .fake-hr {
+  border-top: 1px solid #7fbce3;
+  width: 100%;
+  max-width: 650px;
+  margin: 1em auto;
+}
+
+.flujo-ges .btns-patologia {
+  max-width: 800px;
+  margin: 0 auto 2.5em;
+}
+
+.flujo-ges .btns-patologia h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.flujo-ges .btns-patologia .btns-patologia_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flujo-ges .btns-patologia .btns-patologia_box .btn-patologia {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  min-width: 30%;
+  padding: 1.5em;
+  border: 1px solid #0079c7;
+  -webkit-box-shadow: 3px 3px 8px 0 #5b5b5b40;
+          box-shadow: 3px 3px 8px 0 #5b5b5b40;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.flujo-ges .btns-patologia .btns-patologia_box .btn-patologia.activeGes {
+  background-color: #f0f8fd;
+  border: 1px solid #1697f3;
+}
+
+.flujo-ges .btns-patologia .btns-patologia_box .btn-patologia h5 {
+  font-size: 14px;
+  color: #0079c7;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.flujo-ges .advertenciaGes {
+  color: #4c4c4c;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.flujo-ges .advertenciaGes h4 {
+  font-style: italic;
+  font-size: 16px;
+  padding: 1em 0;
+}
+
+.flujo-ges .advertenciaGes p {
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.flujo-ges .advertenciaGes p span {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.flujo-ges .advertenciaGes p a {
+  cursor: pointer;
+}
+
+.flujo-ges .advertenciaGes p a.lightLink {
+  color: #1697f3;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.flujo-ges .advertenciaGes p a.darkLink {
+  color: #0079c7;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.flujo-ges .btnGes {
+  width: 300px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #0079c7;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 2em auto 0;
+  display: block;
+}
+
+.flujo-ges .btnGes.disabled {
+  background-color: rgba(0, 121, 199, 0.5);
+  cursor: default;
+}
+
+.flujo-ges .btnDownload {
+  width: 300px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #0079c7;
+  color: #0079c7;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 2em auto 0;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+}
+
+.flujo-ges .btnDownload:before {
+  content: url(../assets/icons/icon-descargar.svg);
+  position: absolute;
+  left: 55px;
+  top: calc(50% - 10px);
+  display: block;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.flujo-ges .helpGes {
+  background-color: #409bd6;
+  width: 175px;
+  height: 25px;
+  color: #fff;
+  font-size: 13px;
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flujo-ges .sinGes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flujo-ges .sinGes h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+  padding-top: 1em;
+}
+
+.flujo-ges .sinGes .advertenciaGes {
+  border: 2px dotted #1697f3;
+  background-color: #1697f333;
+  text-align: left;
+  border-radius: 8px;
+  padding: .5em 1.5em 1.5em;
+  max-width: 650px;
+  margin: 1em 10px;
+}
+
+.flujo-ges .coberturaGes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0 0;
+}
+
+.flujo-ges .coberturaGes h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.flujo-ges .coberturaGes ul {
+  max-width: 350px;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.flujo-ges .coberturaGes ul li {
+  margin-bottom: 1em;
+}
+
+.flujo-ges .coberturaGes ul li:before {
+  content: "\2022";
+  color: #1697f3;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.flujo-ges .coberturaGes ul li a {
+  color: #1697f3;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.flujo-ges .accordionGes-container {
+  text-align: center;
+}
+
+.flujo-ges .accordionGes-container .patologia-box {
+  padding: 1.5em 0 1em;
+  border: 1px dotted #0079c7;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flujo-ges .accordionGes-container .patologia-box h4 {
+  font-size: 13px;
+  color: #4a4a4a;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.flujo-ges .accordionGes-container .patologia-box h4 span {
+  font-weight: 400;
+  color: #0079c7;
+}
+
+.flujo-ges .accordionGes-container h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin: 2.5em 0 1.5em;
+}
+
+.flujo-ges .accordionGes-container .accordionGes {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2em;
+  border-top: 2px solid #0079c7;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab input[type=checkbox]:checked + label {
+  background-color: #ecf6ff;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab input[type=checkbox]:checked + label::after {
+  -webkit-transform: scale(1.5) rotate(180deg);
+          transform: scale(1.5) rotate(180deg);
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 3em;
+  cursor: pointer;
+  width: 100%;
+  color: #4c4c4c;
+  text-align: left;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc:after {
+  content: url(../assets/icons/icon-arrow-bottom.svg);
+  position: absolute;
+  right: 20px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  top: calc(50% - 3px);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc span {
+  font-size: 13px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .patologia {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  position: relative;
+  padding-right: 50px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .patologia h3 {
+  font-weight: 500;
+  color: #0079c7;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .patologia:before {
+  position: absolute;
+  left: -35px;
+  top: 5px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .patologia.tratamiento:before {
+  content: url(../assets/icons/icon_canasta-tratamiento.svg);
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .patologia.seguimiento:before {
+  content: url(../assets/icons/icon_canasta-seguimiento.svg);
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .activeGes {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .activeGes h4 {
+  font-size: 14px;
+  color: #fb7c40;
+  position: relative;
+  padding-top: 20px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .activeGes h4:before {
+  content: url(../assets/icons/icon_canasta-activa.svg);
+  position: absolute;
+  left: -25px;
+  top: 17px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .labelAcc .periodo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(40% - 75px);
+          flex: 0 0 calc(40% - 75px);
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .tab-content {
+  max-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e6;
+  -webkit-transition: max-height ease-in-out 1s;
+  transition: max-height ease-in-out 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .tab-content .containerRadius {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #b2d7ef;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .tab-content .containerRadius:last-child {
+  border-bottom: none;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .tab-content .containerRadius h4 {
+  color: #4a4a4a;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.flujo-ges .accordionGes-container .accordionGes .tab .tab-content .containerRadius h5 {
+  color: #4a4a4a;
+  font-size: 13px;
+  padding-top: 6px;
+}
+
+.flujo-ges .resumenGes {
+  background-color: #f0f8fd;
+  max-width: 775px;
+  width: 100%;
+  margin: 2em auto;
+  padding: 2em 0;
+}
+
+.flujo-ges .resumenGes .col-md-6 {
+  padding: 0 2em;
+}
+
+.flujo-ges .resumenGes .col-md-6.left-col {
+  border-left: 1px solid #cecccf;
+}
+
+.flujo-ges .resumenGes h5 {
+  font-size: 14px;
+  color: #767676;
+  font-weight: 300;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.flujo-ges .resumenGes h5 span {
+  color: #6a2ca1;
+  font-size: 30px;
+  position: absolute;
+  left: 125px;
+  top: -5px;
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes {
+  position: absolute;
+  left: 140px;
+  top: -2px;
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes:hover .tooltipBox {
+  visibility: visible;
+  opacity: 1;
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes .tooltipBox {
+  position: absolute;
+  background-color: #f7f7f7;
+  border: 1px solid #1697f3;
+  border-radius: 8px;
+  width: 300px;
+  padding: 1em;
+  left: 28px;
+  top: -40px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes .tooltipBox h3 {
+  color: #4c4c4c;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes .tooltipBox p {
+  color: #4c4c4c;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes .tooltipBox:before {
+  border-color: transparent;
+  border-style: solid;
+  border-right-color: #f7f7f7;
+  z-index: 2;
+  border-width: 6px 5px 6px 0;
+  left: -5px;
+  top: calc(50% - 6px);
+  position: absolute;
+  content: "";
+}
+
+.flujo-ges .resumenGes h5 .tooltipGes .tooltipBox:after {
+  left: -6px;
+  top: calc(50% - 6px);
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px 5px 6px 0;
+  border-right-color: #1697f3;
+}
+
+.flujo-ges .resumenGes h6 {
+  font-size: 12px;
+  font-style: italic;
+  color: #6a2ca1;
+  margin-top: -5px;
+}
+
+.flujo-ges .resumenGes h4 {
+  font-size: 16px;
+  color: #4a4a4a;
+  padding-bottom: 2em;
+}
+
+.flujo-ges .resumenGes h4 img {
+  width: 120px;
+}
+
+.flujo-ges .resumenGes .longRes h4 {
+  min-height: 68px;
+}
+
+.flujo-ges .resumenGes .longRes h4:last-child {
+  min-height: 35px;
+  padding-bottom: 0;
+}
+
+.flujo-ges .resumenGes h3 {
+  color: #4a4a4a;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.flujo-ges .containerRadius {
+  display: block;
+  position: relative;
+  padding: 1em 3.5em;
+  cursor: pointer;
+  text-align: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+.flujo-ges .containerRadius input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.flujo-ges .containerRadius .checkmark {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #4a4a4a;
+  border-radius: 50%;
+}
+
+.flujo-ges .containerRadius .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.flujo-ges .containerRadius input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.flujo-ges .containerRadius .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #0079c7;
+}
+
+.flujo-ges .metodoPago {
+  text-align: center;
+  padding: 1em 10px;
+  max-width: 775px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flujo-ges .metodoPago h2 {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.flujo-ges .metodoPago h5 {
+  color: #767676;
+  font-size: 12px;
+  font-style: italic;
+  padding: 1em 0 2em;
+}
+
+.flujo-ges .metodoPago h5:before {
+  content: url(../assets/icons/icon-alert.svg);
+  display: inline-block;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-right: 10px;
+}
+
+.flujo-ges .metodoPago .col-md-4:first-child .imgLabel img {
+  margin-top: -5px;
+}
+
+.flujo-ges .metodoPago .col-md-4:last-child .imgLabel img {
+  margin-top: 10px;
+}
+
+.flujo-ges .metodoPago .col-md-4 .containerRadius {
+  padding: 1em 0 0 50px;
+}
+
+.flujo-ges .metodoPago .imgLabel {
+  height: 45px;
+}
+
+.flujo-ges .metodoPago h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flujo-ges .metodoPago p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.flujo-ges .metodoPago p span {
+  font-weight: 500;
+}
+
+.flujo-ges .correoCompra {
+  text-align: center;
+  padding: 2em 10px 1em;
+  max-width: 775px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flujo-ges .correoCompra h3 {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.flujo-ges .correoCompra h6 {
+  font-size: 14px;
+  color: #0277ca;
+}
+
+.flujo-ges .successPayment {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 10px;
+}
+
+.flujo-ges .successPayment h5 {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 1em 0;
+}
+
+.flujo-ges .successPayment h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .flujo-ges h1 {
+    font-size: 20px !important;
+  }
+  .flujo-ges .btnGes {
+    height: 42px !important;
+  }
+  .flujo-ges .carousel-users h3 {
+    font-size: 16px !important;
+  }
+  .flujo-ges .resumenGes .col-md-6 {
+    padding: 0 1em !important;
+  }
+  .flujo-ges .resumenGes .col-md-6 h4 {
+    padding-bottom: 1em !important;
+    min-height: auto !important;
+  }
+  .flujo-ges .resumenGes .col-md-6 .tooltipBox {
+    left: -145px !important;
+    top: 25px !important;
+  }
+  .flujo-ges .resumenGes .col-md-6 .tooltipBox:before {
+    border-color: transparent !important;
+    border-bottom-color: #f7f7f7 !important;
+    border-width: 0 5px 6px !important;
+    top: -5px !important;
+    left: 50% !important;
+  }
+  .flujo-ges .resumenGes .col-md-6 .tooltipBox:after {
+    top: -6px !important;
+    left: 50% !important;
+    border-color: transparent !important;
+    border-width: 0 5px 6px !important;
+    border-bottom-color: #1697f3 !important;
+  }
+  .flujo-ges .metodoPago .col-md-4 {
+    padding: 0 1em 10px 0;
+  }
+  .flujo-ges .metodoPago .col-md-4 .imgLabel {
+    height: auto !important;
+    margin-bottom: 5px;
+  }
+  .flujo-ges .sinGes .advertenciaGes {
+    margin: 1em 0 !important;
+  }
+  .flujo-ges .accordionGes .labelAcc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1em 1em 1em 3em !important;
+  }
+  .flujo-ges .accordionGes .labelAcc .patologia, .flujo-ges .accordionGes .labelAcc .periodo {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 auto !important;
+            flex: 0 0 auto !important;
+  }
+  .flujo-ges .accordionGes .labelAcc .activeGes {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 35px !important;
+            flex: 0 0 35px !important;
+  }
+  .flujo-ges .accordionGes .labelAcc .activeGes h4 {
+    padding-top: 10px !important;
+  }
+  .flujo-ges .accordionGes .labelAcc .activeGes h4:before {
+    left: -33px !important;
+    top: 7px !important;
+  }
+  .flujo-ges .accordionGes .labelAcc .patologia {
+    padding-right: 10px !important;
+  }
+  .flujo-ges .accordionGes .containerRadius {
+    padding: 1em 1em 1em 3.5em !important;
+  }
+  .flujo-ges .btns-patologia {
+    margin: 1em auto !important;
+  }
+  .flujo-ges .btns-patologia h3 {
+    padding: 1em 0 !important;
+  }
+  .flujo-ges .btns-patologia .btns-patologia_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flujo-ges .btns-patologia .btns-patologia_box .btn-patologia {
+    margin-bottom: 1em;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    padding: 1em !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 auto !important;
+            flex: 0 0 auto !important;
+  }
+  .flujo-ges .btns-patologia .btns-patologia_box .btn-patologia img {
+    min-width: 30px;
+    width: 30px;
+  }
+  .flujo-ges .btns-patologia .btns-patologia_box .btn-patologia h5 {
+    margin: 0 0 0 1em !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .flujo-ges h1 {
+    font-size: 20px !important;
+  }
+  .flujo-ges .carousel-users h3 {
+    font-size: 16px !important;
+  }
+  .flujo-ges .resumenGes .left-col {
+    border: none !important;
+  }
+}
