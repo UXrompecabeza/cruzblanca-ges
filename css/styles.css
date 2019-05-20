@@ -2124,7 +2124,6 @@ a.btnLink:hover {
   position: relative;
   top: -3.3em;
   background-image: url("../assets/icons/icon_chevron-left.svg") !important;
-  background-position: center !important;
   background-size: cover !important;
   background-color: #fff !important;
   width: .5em;
@@ -2368,8 +2367,6 @@ a.btnLink:hover {
 .ui-datepicker {
   display: none;
   margin: 5px auto 0;
-  width: 18em;
-  height: 17em;
   background-color: white;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -2409,7 +2406,6 @@ a.btnLink:hover {
 }
 
 .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
-  padding: 1em 0;
   font-size: 16px;
 }
 
@@ -3872,7 +3868,7 @@ header .header-mo .box-notification img {
   border-radius: 100%;
   position: relative;
   top: .5em;
-  z-index: 2;
+  z-index: 1;
   float: right;
   margin-right: 1em;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);

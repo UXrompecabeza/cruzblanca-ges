@@ -86,25 +86,58 @@
           </div>
         </div>
         <div class="fake-hr"></div>
-        <div class="btns-patologia">
-          <h3>Selecciona una patología para la cual quieres comprar un bono</h3>
-          <div class="btns-patologia_box">
-            <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
-              <h5>07. Diabetes Mellitus tipo II</h5>
-            </div>
-            <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
-              <h5>44. Hernia del núcleo pulposo</h5>
-            </div>
-            <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
-              <h5>64. Prevención secundaria enfermedad renal crónica terminal</h5>
+        <div class="container-btnes">
+          <div class="btns-patologia">
+            <h3>Selecciona una patología para la cual quieres comprar un bono</h3>
+            <div class="btns-patologia_box">
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>07. Diabetes Mellitus tipo II</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>44. Hernia del núcleo pulposo</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>64. Prevención secundaria enfermedad renal crónica terminal</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>66. Salud oral integral de la embarazada</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>68. Hepatitis crónica por virus hepatitis B</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>78. Lupus eritematoso sistémico</h5>
+              </div>
+              <div class="btn-patologia"><img src="./assets/icons/icon_pathologist-blue.svg"/>
+                <h5>80. Tratamiento de la erradicación del helicobacter pylori</h5>
+              </div>
             </div>
           </div>
+          <div class="fake-hr"></div>
+          <div class="advertenciaGes">
+            <h4>¡Importante!</h4>
+            <p>Si tu Patología GES no se encuentra dentro de las opciones, es probable que se encuentre en <span>estado inactivo</span>. Para activarlo, llámanos al <a class="darkLink">600 818 0000</a>.  ¡Te esperamos!<br><span>Recuerda pedir hora de atención médica en prestador designado antes de comprar bono.</span></p>
+            <button class="btnGes disabled" data-toggle="modal" data-target="#modalConfirmacion">Siguiente</button>
+          </div>
         </div>
-        <div class="fake-hr"></div>
-        <div class="advertenciaGes">
-          <h4>¡Importante!</h4>
-          <p>Si tu Patología GES no se encuentra en el listado, es probable que se encuentre en <span>estado Inactivo</span> lo que puedes ver en el <a class="lightLink">histórico de menú GES</a>. Para revisar o reactivar una Patología, llámanos al <a class="darkLink">600 818 0000</a> ¡Te esperamos!</p>
-          <button class="btnGes next disabled">Siguiente</button>
+        <div class="alertaBtnes hide">
+          <div class="advertenciaGes yellow">
+            <h4>¡Importante!</h4>
+            <p>Por normativa <span>no podrás visualizar la información de GES de tus beneficiarios mayores de 18 años</span>. Para mayor información, llámanos al <a class="darkLink">600 818 0000</a> o vísitanos en nuestras sucursales.</span></p><a class="sucursales"> <img src="./assets/icons/icon-location.svg"/>Sucursales CruzBlanca</a>
+          </div>
+        </div>
+        <div class="modal fade" id="modalConfirmacion" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="advertenciaGes">
+                  <h4>¡Importante!</h4>
+                  <p>Recuerda pedir hora de atención médica en prestador designado <span>antes de comprar el bono.</span></p>
+                </div>
+                <button class="btnGes next">Confirmo</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="navbar-bottom hide-sm"><a href="#">
             <div class="navbar-bottom-return"><img src="assets/icons/icon-volverizq.svg" alt=""/>

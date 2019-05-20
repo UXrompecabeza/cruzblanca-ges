@@ -74,7 +74,7 @@
             <h4>Prestador de apoyo: <span>Integramédica</span></h4>
             <h4>Medicamentos: <span>Farmacias Ahumada</span></h4>
           </div>
-          <h3>Selecciona una canasta para comprar el bono</h3>
+          <h3>Selecciona una canasta para continuar</h3>
           <div class="accordionGes">
             <div class="tab">
               <input id="tab-one" type="checkbox" name="tabs"/>
@@ -85,20 +85,30 @@
                 <div class="activeGes">
                   <h4>Activo</h4>
                 </div>
-                <div class="periodo"><span>Periodo</span>
-                  <h3>10 dic. 2018 al 10 ene. 2019</h3>
-                </div>
               </label>
               <div class="tab-content">
                 <label class="containerRadius">
-                  <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Odontología, Psiquiatría, Radiología, Oncología.</h4>
-                  <h5>Código 010113</h5>
                   <input type="radio" name="acc1"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
+                    <h5>Código 010113</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
                 </label>
                 <label class="containerRadius">
-                  <h4>Atención kinesiológica integral ambulatoria.</h4>
-                  <h5>Código 0102006</h5>
-                  <input type="radio" name="acc1"/><span class="checkmark"></span>
+                  <input type="radio" name="acc1" disabled="disabled"/><span class="checkmark disabled"></span>
+                  <div class="procedimiento">
+                    <h4>Atención kinesiológica integral ambulatoria.</h4>
+                    <h5>Código 0102006</h5>
+                    <h6>Ya has comprado un bono para esta patología</h6>
+                  </div>
+                  <div class="fecha">
+                    <h4>Comprado el</h4>
+                    <h5>12 abril 2019</h5>
+                  </div>
                 </label>
               </div>
             </div>
@@ -111,20 +121,134 @@
                 <div class="activeGes">
                   <h4>Activo</h4>
                 </div>
-                <div class="periodo"><span>Periodo</span>
-                  <h3>20 ene. 2018 al 28 feb. 2019</h3>
+              </label>
+              <div class="tab-content">
+                <label class="containerRadius">
+                  <input type="radio" name="acc2"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
+                    <h5>Código 010113</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+                <label class="containerRadius">
+                  <input type="radio" name="acc2"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Atención kinesiológica integral ambulatoria.</h4>
+                    <h5>Código 0102006</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="tab">
+              <input id="tab-three" type="checkbox" name="tabs"/>
+              <label class="labelAcc" for="tab-three">
+                <div class="patologia cirugia"><span>Nombre Canasta</span>
+                  <h3>Tratamiento quirúrgico Hernia Nucleo Pulposo Lumbar</h3>
+                </div>
+                <div class="activeGes">
+                  <h4>Activo</h4>
                 </div>
               </label>
               <div class="tab-content">
                 <label class="containerRadius">
-                  <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
-                  <h5>Código 010113</h5>
-                  <input type="radio" name="acc2"/><span class="checkmark"></span>
+                  <input type="radio" name="acc3"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
+                    <h5>Código 010113</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
                 </label>
                 <label class="containerRadius">
-                  <h4>Atención kinesiológica integral ambulatoria.</h4>
-                  <h5>Código 0102006</h5>
-                  <input type="radio" name="acc2"/><span class="checkmark"></span>
+                  <input type="radio" name="acc3"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Atención kinesiológica integral ambulatoria.</h4>
+                    <h5>Código 0102006</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="tab">
+              <input id="tab-four" type="checkbox" name="tabs" disabled="disabled"/>
+              <label class="labelAcc" for="tab-four">
+                <div class="patologia interno"><span>Nombre Canasta</span>
+                  <h3>Seguimiento Hernia Núcleo Pulposo Lumbar</h3>
+                </div>
+                <div class="inactiveGes">
+                  <h4>Inactivo</h4>
+                </div>
+              </label>
+              <div class="tab-content">
+                <label class="containerRadius">
+                  <input type="radio" name="acc4"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
+                    <h5>Código 010113</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+                <label class="containerRadius">
+                  <input type="radio" name="acc4"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Atención kinesiológica integral ambulatoria.</h4>
+                    <h5>Código 0102006</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="tab">
+              <input id="tab-five" type="checkbox" name="tabs"/>
+              <label class="labelAcc" for="tab-five">
+                <div class="patologia trauma"><span>Nombre Canasta</span>
+                  <h3>Seguimiento Hernia Núcleo Pulposo Lumbar</h3>
+                </div>
+                <div class="activeGes">
+                  <h4>Activo</h4>
+                </div>
+              </label>
+              <div class="tab-content">
+                <label class="containerRadius">
+                  <input type="radio" name="acc5"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Consulta integral de especialidades en Medicina Interna y Subespecialidades, Oftalmología, Neurología, Oncología.</h4>
+                    <h5>Código 010113</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
+                </label>
+                <label class="containerRadius">
+                  <input type="radio" name="acc5"/><span class="checkmark"></span>
+                  <div class="procedimiento">
+                    <h4>Atención kinesiológica integral ambulatoria.</h4>
+                    <h5>Código 0102006</h5>
+                  </div>
+                  <div class="fecha">
+                    <h4>Compra disponible desde</h4>
+                    <h5>8 mayo 2019</h5>
+                  </div>
                 </label>
               </div>
             </div>
